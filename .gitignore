@@ -205,3 +205,28 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ---- Databricks / Spark ----
+.sparkStaging/
+.metastore_db/
+derby.log
+checkpoint/
+*.parquet
+*.delta
+*.db
+
+# ---- Data / model artifacts (keep small samples only) ----
+data/*
+models/*
+!data/.gitkeep
+!models/.gitkeep
+
+# ---- Reports build artifacts ----
+reports/*
+!reports/.gitkeep
+
+# ---- OS / Editor ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
